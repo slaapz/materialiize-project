@@ -34,6 +34,15 @@
         padding-bottom: 4vw;
       }
 
+      .tabs .indicator {
+        background-color: #1a237e;
+      }
+
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
+
       @media screen and (max-width: 670px) {
         header {
           min-height: 500px;
@@ -126,41 +135,64 @@
         <img src="img/street.jpg" alt="" class="responsive-img" />
       </div>
     </div>
+
     <!-- services / tabs -->
-    <div class="container">
-      <p>
-        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
-        De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
-        vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.
-        Hi mindless mortuis soulless creaturas, imo evil stalking monstra
-        adventus resi dentevil vultus comedat cerebella viventium. Qui animated
-        corpse.
-      </p>
-      <p>
-        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
-        De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
-        vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.
-        Hi mindless mortuis soulless creaturas, imo evil stalking monstra
-        adventus resi dentevil vultus comedat cerebella viventium. Qui animated
-        corpse.
-      </p>
-      <p>
-        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
-        De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
-        vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.
-        Hi mindless mortuis soulless creaturas, imo evil stalking monstra
-        adventus resi dentevil vultus comedat cerebella viventium. Qui animated
-        corpse.
-      </p>
-      <p>
-        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
-        De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
-        vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.
-        Hi mindless mortuis soulless creaturas, imo evil stalking monstra
-        adventus resi dentevil vultus comedat cerebella viventium. Qui animated
-        corpse.
-      </p>
-    </div>
+    <section class="container section" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I Do...</h2>
+          <p>
+            Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+            cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+            sit​​.
+          </p>
+          <p>
+            Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+            cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+            sit​​.
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="indigo-text text-darken-4"
+                >Photography</a
+              >
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+            <p>
+              Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+              cerebro. De carne lumbering animata corpora quaeritis. Summus
+              brains sit​​.
+            </p>
+            <p>
+              Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+              cerebro. De carne lumbering animata corpora quaeritis. Summus
+              brains sit​​.
+            </p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">EDITING</p>
+            <p>
+              Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+              cerebro. De carne lumbering animata corpora quaeritis. Summus
+              brains sit​​.
+            </p>
+            <p>
+              Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+              cerebro. De carne lumbering animata corpora quaeritis. Summus
+              brains sit​​.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- parallax -->
     <div class="parallax-container">
       <div class="parallax">
@@ -187,6 +219,7 @@
         $(".sidenav").sidenav();
         $(".materialboxed").materialbox();
         $(".parallax").parallax();
+        $(".tabs").tabs();
       });
     </script>
   </body>
