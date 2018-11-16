@@ -67,6 +67,33 @@
             <li><a href="">Photos</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Contact</a></li>
+            <li>
+              <a
+                href=""
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="Instragram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
           </ul>
           <!-- side navbar for mobile menu -->
           <ul class="sidenav grey lighten-2" id="mobile-menu">
@@ -308,6 +335,7 @@
         $(".datepicker").datepicker({
           disableWeekends: true
         });
+        $(".tooltipped").tooltip();
       });
     </script>
   </body>
